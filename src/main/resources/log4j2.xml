@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+	<Appenders>
+		<Console name="ConsoleAppender"
+		         target="SYSTEM_OUT">
+			<PatternLayout pattern="[%p] (%F:%L) [%d{yyyy-MMM-dd HH:mm:ss}] - %m%n"/>
+		</Console>
+		<File name="FileAppender"
+		      fileName="z-application-logs/${date:dd-MM-yyyy}.log"
+		      immediateFlush="false"
+		      append="true">
+			<PatternLayout pattern="[%p] (%F:%L) [%d{yyyy-MMM-dd HH:mm:ss}] - %m%n"/>
+		</File>
+	</Appenders>
+	<Loggers>
+		<Root level="info">
+			<AppenderRef ref="ConsoleAppender"/>
+			<AppenderRef ref="FileAppender"/>
+		</Root>
+	</Loggers>
+</Configuration>

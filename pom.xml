@@ -1,0 +1,75 @@
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>SELENIUM_CHALLANGE</groupId>
+	<artifactId>SELENIUM_CHALLANGE</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	
+	<properties>
+		<selenium-java.version>4.1.1</selenium-java.version>
+		<webDriverManager.version>5.0.3</webDriverManager.version>
+		<testNG.version>7.4.0</testNG.version>
+		<orgApachePoi.version>5.1.0</orgApachePoi.version>
+		<orgApachePoi-ooxml.version>5.1.0</orgApachePoi-ooxml.version>
+		<restAssured.version>4.4.0</restAssured.version>
+		<jacksonCore.version>2.13.1</jacksonCore.version>
+		<log4j-core.version>2.17.1</log4j-core.version>
+		<log4j-api.version>2.17.1</log4j-api.version>
+	</properties>
+
+	<dependencies>
+		<!-- Selenium dependencies -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${selenium-java.version}</version>
+		</dependency>
+		<!-- Web-driver Manager -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>${webDriverManager.version}</version>
+		</dependency>
+		<!-- TestNG dependencies -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${testNG.version}</version>
+		</dependency>
+		<!-- Excel Dependencies -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>${orgApachePoi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>${orgApachePoi-ooxml.version}</version>
+		</dependency>
+		<!-- Rest Assured -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>${restAssured.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jacksonCore.version}</version>
+		</dependency>
+		<!-- Log4j 2 dependency-->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${log4j-core.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>${log4j-api.version}</version>
+		</dependency>
+	</dependencies>
+	
+</project>
