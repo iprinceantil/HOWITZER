@@ -1,75 +1,95 @@
-<project
-	xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>XARVIS</groupId>
 	<artifactId>XARVIS</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
 	<properties>
-		<selenium-java.version>4.1.1</selenium-java.version>
-		<webDriverManager.version>5.0.3</webDriverManager.version>
-		<testNG.version>7.4.0</testNG.version>
-		<orgApachePoi.version>5.1.0</orgApachePoi.version>
-		<orgApachePoi-ooxml.version>5.1.0</orgApachePoi-ooxml.version>
-		<restAssured.version>4.4.0</restAssured.version>
-		<jacksonCore.version>2.13.1</jacksonCore.version>
-		<log4j-core.version>2.17.1</log4j-core.version>
-		<log4j-api.version>2.17.1</log4j-api.version>
+		<!-- JDK version properties start -->
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+		<!-- JDK version properties end -->
+		<!-- Dependency versions start -->
+		<SELENIUM-JAVA.VERSION>4.1.2</SELENIUM-JAVA.VERSION>
+		<WEBDRIVERMANAGER.VERSION>5.1.0</WEBDRIVERMANAGER.VERSION>
+		<TESTNG.VERSION>7.5</TESTNG.VERSION>
+		<RESTASSURED.VERSION>4.5.1</RESTASSURED.VERSION>
+		<JACKSON.CORE.VERSION>2.13.2</JACKSON.CORE.VERSION>
+		<ORG.APACHE.POI.VERSION>5.2.1</ORG.APACHE.POI.VERSION>
+		<LOG4J2.VERSION>2.17.2</LOG4J2.VERSION>
+		<MYSQL.VERSION>8.0.28</MYSQL.VERSION>
+		<GCP.SPANNER.VERSION>6.21.2</GCP.SPANNER.VERSION>
+		<GCP.SPANNER.JDBC.VERSION>2.6.1</GCP.SPANNER.JDBC.VERSION>
+		<!-- Dependency versions start -->
 	</properties>
-
 	<dependencies>
 		<!-- Selenium dependencies -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>${selenium-java.version}</version>
+			<version>${SELENIUM-JAVA.VERSION}</version>
 		</dependency>
 		<!-- Web-driver Manager -->
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>${webDriverManager.version}</version>
+			<version>${WEBDRIVERMANAGER.VERSION}</version>
 		</dependency>
 		<!-- TestNG dependencies -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>${testNG.version}</version>
-		</dependency>
-		<!-- Excel Dependencies -->
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi</artifactId>
-			<version>${orgApachePoi.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
-			<version>${orgApachePoi-ooxml.version}</version>
+			<version>${TESTNG.VERSION}</version>
 		</dependency>
 		<!-- Rest Assured -->
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
-			<version>${restAssured.version}</version>
+			<version>${RESTASSURED.VERSION}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>${jacksonCore.version}</version>
+			<version>${JACKSON.CORE.VERSION}</version>
 		</dependency>
-		<!-- Log4j 2 dependency-->
+		<!-- Excel Dependencies -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>${ORG.APACHE.POI.VERSION}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>${ORG.APACHE.POI.VERSION}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
-			<version>${log4j-core.version}</version>
+			<version>${LOG4J2.VERSION}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-api</artifactId>
-			<version>${log4j-api.version}</version>
+			<artifactId>log4j-slf4j-impl</artifactId>
+			<version>${LOG4J2.VERSION}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${MYSQL.VERSION}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.cloud/google-cloud-spanner -->
+		<dependency>
+			<groupId>com.google.cloud</groupId>
+			<artifactId>google-cloud-spanner</artifactId>
+			<version>${GCP.SPANNER.VERSION}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.cloud/google-cloud-spanner-jdbc -->
+		<dependency>
+			<groupId>com.google.cloud</groupId>
+			<artifactId>google-cloud-spanner-jdbc</artifactId>
+			<version>${GCP.SPANNER.JDBC.VERSION}</version>
 		</dependency>
 	</dependencies>
-	
 </project>

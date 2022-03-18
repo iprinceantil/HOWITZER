@@ -12,10 +12,12 @@
 			<PatternLayout pattern="[%p] (%F:%L) [%d{yyyy-MMM-dd HH:mm:ss}] - %m%n"/>
 		</File>
 	</Appenders>
+	<!--  
 	<Loggers>
 		<Root level="info">
 			<AppenderRef ref="ConsoleAppender"/>
 			<AppenderRef ref="FileAppender"/>
 		</Root>
 	</Loggers>
+	-->
 </Configuration>

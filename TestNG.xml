@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite Name">
+
+	<listeners>
+		<listener class-name="extentReports.ExtentReportListner" />
+	</listeners>
+	
+	<test name="Test Set Name 1">
+		<classes>
+			<class name="package.class name 1"></class>
+			<class name="package.class name 2"></class>
+		</classes>
+	</test>
+	
+	<test name="Test Set Name 2">
+		<classes>
+			<class name="package.class name 1"></class>
+			<class name="package.class name 2"></class>
+		</classes>
+	</test>
+	
+</suite>
