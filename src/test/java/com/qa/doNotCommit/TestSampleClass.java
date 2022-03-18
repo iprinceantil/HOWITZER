@@ -19,7 +19,7 @@ public class TestSampleClass extends TestBase {
 	public void SetUp() {
 
 		new TestBase().initChrome();
-		driver.get(propManager.getValue("url"));
+		driver.get(propManager.getPropertyValue("url"));
 
 	}
 

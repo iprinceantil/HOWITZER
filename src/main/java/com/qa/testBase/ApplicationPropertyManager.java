@@ -28,7 +28,7 @@ public class ApplicationPropertyManager {
 		}		
 	}
 
-	public String getValue(String Key) {
+	public String getPropertyValue(String Key) {
 
 		String str = properties.getProperty(Key);
 		if(str != null && str.length() > 0) return str;
