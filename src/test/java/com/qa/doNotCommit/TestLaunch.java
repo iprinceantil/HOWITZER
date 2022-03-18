@@ -1,4 +1,4 @@
-package testSamplePackage;
+package com.qa.doNotCommit;
 
 import org.testng.annotations.Test;
 
