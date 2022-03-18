@@ -1,4 +1,4 @@
-package com.qa.testCases;
+package com.qa.poc;
 
 import java.io.File;
 import java.io.FileNotFoundException;

@@ -1,0 +1,3 @@
+| PID  | standardInput.division | standardInput.userInitials | standardInput.userID | standardInput.employeeNumber | standardInput.traceFlag | standardInput.consumer | request.saleschecks.1 |
+| P001 | 71                     | M                          | MCOM                 | 7504326.Numeric              | true.Boolean            | MCOM                   | 2462042.Numeric       |
+| P002 | 72                     | B                          | BCOM                 | 7504326.Numeric              | true.Boolean            | BCOM                   | 66689676.Numeric      |

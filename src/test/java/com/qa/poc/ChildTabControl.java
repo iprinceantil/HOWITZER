@@ -1,4 +1,4 @@
-package com.qa.testCases;
+package com.qa.poc;
 
 import org.openqa.selenium.WindowType;
 
